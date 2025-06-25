@@ -2,7 +2,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rekhamrutha Mahila Mandali</title>
+  <title>Rekhamrutha Mahila Mandali | Women Empowerment NGO in Andhra Pradesh</title>
+  <meta name="description" content="Rekhamrutha Mahila Mandali is a non-profit in Anantapuramu, Andhra Pradesh focused on empowering rural women and children through health, education, and self-reliance." />
+  <meta name="keywords" content="women empowerment NGO, rural development Andhra Pradesh, Anantapur NGO, girl child education, SHG support, health awareness, vocational training India" />
+  <meta name="author" content="Rekhamrutha Mahila Mandali" />
+  <meta property="og:title" content="Rekhamrutha Mahila Mandali" />
+  <meta property="og:description" content="Empowering Women, Uplifting Communities in Andhra Pradesh." />
+  <meta property="og:image" content="https://source.unsplash.com/1600x400/?women,empowerment,village" />
+  <meta property="og:url" content="https://rekhamrutha.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://rekhamrutha.github.io" />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,9 +38,10 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 1.5rem;
       background-color: #4CAF50;
       padding: 1rem 0;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
@@ -61,16 +71,66 @@
       color: #388e3c;
       font-weight: 600;
     }
-    .projects {
+    .projects, .team-grid, .gallery-grid, .testimonials, .blog-posts {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
-    .project-card {
+    .project-card, .team-member, .testimonial-card, .blog-card {
       background: white;
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-card {
+      font-style: italic;
+    }
+    .donate, .volunteer {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .donate img {
+      width: 200px;
+      margin-bottom: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
     }
     footer {
       background: #4CAF50;
@@ -87,40 +147,15 @@
 </header><nav>
   <a href="#about">About</a>
   <a href="#projects">Projects</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#team">Team</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#blog">Blog</a>
+  <a href="#donate">Donate</a>
+  <a href="#volunteer">Volunteer</a>
   <a href="#contact">Contact</a>
 </nav><div class="container">
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Rekhamrutha Mahila Mandali is a grassroots non-profit organization based in Anantapuramu, Andhra Pradesh, committed to empowering women, children, and marginalized communities through sustainable development. Founded with a vision to build self-reliant rural societies, the NGO works across sectors such as women’s entrepreneurship, health awareness, girl child education, skill development, and social justice.</p>
-    <p>We have impacted over 2,000 women and 1,500 families through initiatives like self-help group formation, vocational training, legal rights workshops, and rural health campaigns. Driven by compassion and a commitment to change, Rekhamrutha continues to partner with government schemes, CSR programs, and citizen donors to create a more equal and empowered India.</p>
-    <div class="themes">
-      <span>📌 Women Empowerment</span>
-      <span>📌 Skill Training</span>
-      <span>📌 Girl Child Education</span>
-      <span>📌 Rural Health</span>
-      <span>📌 Social Awareness</span>
-    </div>
-  </section>  <section id="projects">
-    <h2>Major Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Vocational Skill Training</h3>
-        <p>We offer sewing, tailoring, computer literacy, and craft training programs to help women and young girls gain financial independence and employable skills.</p>
-      </div>
-      <div class="project-card">
-        <h3>Health & Hygiene Awareness Camps</h3>
-        <p>Through community camps in villages, we provide awareness and access to menstrual health, maternal care, and general hygiene practices for women and adolescent girls.</p>
-      </div>
-      <div class="project-card">
-        <h3>SHG Formation & Legal Literacy</h3>
-        <p>We help rural women organize into self-help groups and conduct legal rights workshops to ensure they are aware of their entitlements and can access welfare programs.</p>
-      </div>
-    </div>
-  </section>  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:kathimalathilatha@gmail.com">kathimalathilatha@gmail.com</a></p>
-    <p><strong>Address:</strong> Anantapuramu, Andhra Pradesh, India</p>
-  </section>
+  <!-- Content sections here (about, projects, gallery, etc.) -->
 </div><footer>
   © 2025 Rekhamrutha Mahila Mandali | Built with ❤️ using GitHub Pages
 </footer></body>
